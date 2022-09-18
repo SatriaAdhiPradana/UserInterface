@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <link rel="stylesheet" href="../css/get-students.css">
+</head>
+
+<body onload="displayStudents()">
+    <h1>STUDENT REGISTRATION FORM</h1>
+
+    <div id="register">
+        <div action="#" name="students" id="form">
+            <span id="text1"></span><br />
+            <label for="fName" name="fname">First name :</label>
+            <input type="text" id="fname" placeholder="First name"></br></br>
+            <span id="text2"></span><br />
+            <label for="lname">Last name :</label>
+            <input type="text" id="lname" placeholder="last name"></br></br>
+            <span id="text3"></span><br />
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender">
+                <option value="s1"></option>
+                <option value="Male">Male</option>
+                <option value="femal">Female</option>
+                <option value="custom">Custom</option>
+            </select>
+            </br></br>
+            <span id="text4"></span><br />
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="example@gmail.com"></br></br>
+            <span id="text5"></span><br />
+            <label for="grade">class :</label>
+            <select name="grade" id="grade">
+                <option value=""></option>
+                <option value="Senior 1">Senior 1</option>
+                <option value="Senior 2">Senior 2</option>
+                <option value="Senior 3">Senior 3</option>
+                <option value="Senior 4">Senior 4</option>
+                <option value="Senior 5">Senior 5</option>
+                <option value="Senior 6">Senior 6</option>
+            </select>
+
+            </br></br>
+
+        </div>
+        <div id="button">
+            <div id="buttons">
+                <p id="result" style="color: rgb(255, 98, 0); font-size: large;"></p>
+                <button id="submit" onclick="return addStudent()">Submit</button>
+            </div>
+            <div>
+                <p id="result2" style="color: rgb(255, 98, 0); font-size: large;"></p>
+                <button id="submit" onclick="return  removeStudent()">Delete students</button>
+            </div>
+            <!-- <div>
+                <button id="submit" onclick="return  updateStudent()">Update students</button>
+            </div> -->
+        </div>
+    </div>
+    <h1>LIST OF ALL REGISTERD STUDENTS</h1>
+    <div id="studentsinfo">
+        <div id="studentId">
+            <h2>ID</h2>
+        </div>
+        <div id="fnames">
+            <h2>First name</h2>
+        </div>
+        <div id="lnames">
+            <h2>Last name</h2>
+        </div>
+        <div id="emails">
+            <h2>Email</h2>
+        </div>
+        <div id="genders">
+            <h2>Gender</h2>
+
+        </div>
+        <div id="studentgrade">
+            <h2>Class</h2>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+satria adhi pradana 2022
+</html>
